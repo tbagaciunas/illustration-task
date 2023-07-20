@@ -1,5 +1,5 @@
 import React from "react";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Form = ({ onSubmit }) => {
   return (
     <form className="registration-form" onSubmit={onSubmit}>
