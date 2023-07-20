@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import RegistrationForm from "./components/RegistrationForm";
+import RegistrationValidation from "./components/RegistrationValidation";
+import "../src/App.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <RegistrationValidation validate={true}>
+        {() => <RegistrationForm />}
+      </RegistrationValidation>
     </div>
   );
-}
+};
 
 export default App;

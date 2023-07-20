@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px solid #f2877d;
+  width: 1440px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px solid #f2877d;
+  display: flex;
+}
+
+.left-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f2877d;
+  width: 50%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 20px;
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 10px;
+}
+
+.buttons-container button {
+  flex: 1;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  width: 50px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons-container button:last-child {
+  margin-right: 0;
+}
+
+.buttons-container button i {
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Google button */
+.buttons-container .google-button {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid black;
+  width: 20px;
+}
+
+/* Facebook button */
+.buttons-container .facebook-button {
+  background-color: #4f70b5;
+  color: #ffffff;
+  border: 1px solid black;
+  width: 20px;
+}
+
+/* registration form  */
+.registration-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.registration-container p {
+  margin-bottom: 10px;
+}
+
+.registration-container a {
+  color: #4f70b5;
+  text-decoration: none;
+}
+
+.registration-container a:hover {
+  text-decoration: underline;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form input {
+  padding: 13px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2877d;
   color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.registration-form .selected-input {
+  border-color: #f2877d;
+  box-shadow: 2 2px 4px rgba(0, 0, 0, 0.1);
+  border-width: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.registration-container p:nth-child(4) {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.left-container .illustration {
+  margin-left: 150px;
+}
+
+.left-container .logo {
+  margin-right: 450px;
+  margin-top: 40px;
+}
+.left-container p {
+  color: white;
+  font-weight: 300;
+}
+
+.left-container .logo img {
+  max-width: 200px;
+}
+
+.left-container .centered-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+}
+
+/* right container  */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.right-container .form-container {
+  margin-top: 20px;
+}
+
+.right-container a {
+  text-decoration: none;
+  color: #f2877d;
+  font-size: 15px;
+}
+
+#or {
+  text-align: center !important;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.button-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
