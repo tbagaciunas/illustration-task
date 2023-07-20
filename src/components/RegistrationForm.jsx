@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import Form from "./Form";
 import illustration from "../assets/illustration.svg";
@@ -11,6 +11,11 @@ const RegistrationForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    const isFormValid = true;
+    if (isFormValid) {
+      alert("Form submitted successfully!");
+    }
   };
 
   return (
@@ -25,7 +30,7 @@ const RegistrationForm = () => {
 
         <div className="centered-text">
           <p>
-            Start for free &amp; Get <br></br>
+            Start for free &amp; Get <br />
             Attractive offers Today!
           </p>
         </div>
@@ -34,7 +39,7 @@ const RegistrationForm = () => {
         <div className="form-container">
           <h1>Get Started</h1>
           <p>
-            Already have an account? <br></br>
+            Already have an account? <br />
             <a href="#">Log in</a>
           </p>
           <div className="buttons-container">
