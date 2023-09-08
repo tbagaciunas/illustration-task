@@ -20,3 +20,6 @@ This React project was created as a part of my front-end studies to master the a
 - Figma: A design tool for creating interactive and visually appealing designs.
 
 This project not only highlights the successful integration of Figma styles but also serves as evidence of my growing expertise in front-end development and style recreation.
+
+
+![Project Illustration](illustration.png)
